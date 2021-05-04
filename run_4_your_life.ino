@@ -112,6 +112,8 @@ void loop() {
     availableIncreaseVelocity();
     
     energy -= 0.25;
+
+    playCarSound();
     
     delay(VELOCITY);
     
@@ -335,11 +337,9 @@ void drawMessageStoppedGame(STATUS pStatus) {
   
 }
 
-// void playShootSound() {
-//   for(freqIn = 200; freqIn < 300; freqIn = freqIn + 2){
-//     piezoTone(1000000/freqIn,3);
-//   }
-// }
+ void playCarSound() {
+    tone(PIEZO, 100, 500);
+ }
 
 void playExplosionSound() {
   for(int k = 0; k < 250; k++){
