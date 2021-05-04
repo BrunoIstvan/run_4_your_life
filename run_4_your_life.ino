@@ -288,7 +288,7 @@ void resetGame() {
   score = MIN_SCORE;
   energy = MAX_ENERGY;
   game = true;
-  VELOCITY = 200
+  VELOCITY = 200;
 }
 
 void drawExplosionShip(int px, int py) {
